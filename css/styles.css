@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+html, body{
+     background-color: lightpink;
+     text-align:center
+}
+h1, h2, h3, h4 {
+  font-family: Raleway, sans-serif;
+  color: white;
+ 
+
+}
+
+div {
+     color: whitesmoke;
+}
+
+#sales-data {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+
+#box-container {
+    display: flex; 
+    margin-inline: 140px;
+    justify-content: space-between;
+    
+
+    
+}
+ 
+.box {
+     height: 175px;
+     border: solid 3px whitesmoke;
+     width: 175px;
+}
+
+#menu {
+     text-align: left;
+     color: black;
+}
+
+#contact {
+     color: black;
+
+}
+
+#add {
+     padding-top: 15px;
+}
+
+#am {
+    padding-bottom: 30px;
+}
+
+img {
+
+   height: 155px;
+   width: 300px;
+   align-items: center;
+}
