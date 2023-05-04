@@ -19,3 +19,8 @@ seaSales3.textContent = CSaSea[2];
 let seaSales4 = document.getElementById("sea-sales-4");
 seaSales4.textContent = CSaSea[3];
 
+let sumSea = 0
+sumSea += CSaSea[0]
+sumSea += CSaSea[1]
+sumSea += CSaSea[2]
+sumSea += CSaSea[3]
