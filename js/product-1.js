@@ -22,3 +22,14 @@ if (code1 === "GET5" && cookie1 >= 3) {
 }
 
 window.alert(message1)
+
+let price = 10;
+let discount = .10;
+
+let total = price - (price * discount/ 100);
+if ( total >= 25){
+     message = "You get free shipping";
+     applyFreeShipping(total >= 25);
+} else {
+     message = "Shipping cost is 3.99.";
+}
