@@ -39,7 +39,7 @@ if (total >= 25) {
 
 let tax = 5.2;
 
-taxDue = price1 * (tax / 100);
+taxDue = price * (tax / 100);
 
 window.alert("Your total is" + taxDue);
 

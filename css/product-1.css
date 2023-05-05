@@ -1,0 +1,13 @@
+body {
+     background-color: lightpink;
+}
+h1,h2,h3 {
+     color: whitesmoke;
+     text-align: center;
+}
+
+img {
+     width: 100px;
+     height: 200px;
+     align-items: center;
+}
