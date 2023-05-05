@@ -2,6 +2,9 @@
 
 let cookie1 = prompt("How many cookies would you like today?");
 let message = "";
+let discount = 0.1;
+// total before tax, total after discount, apply shipping, grand total
+// amount of tax
 
 if (cookie1 >= 3) {
   message = "Get $5 off with code GET5.";
@@ -18,30 +21,35 @@ if (code1 === "GET5" && cookie1 >= 3) {
 } else if (code1 === "GET10" && cookie1 < 3) {
   message1 = "You get 10% off!";
 } else {
-     message1 = "Discount not availble for this order.";
+  message1 = "Discount not availble for this order.";
 }
 
-window.alert(message1)
+window.alert(message1);
 
 let price = 10;
-let discount = .10;
 
-let total = price - (price * discount/ 100);
-if ( total >= 25){
-     message = "You get free shipping";
-     applyFreeShipping(total >= 25);
+
+let total = price - (price * discount) / 100;
+if (total >= 25) {
+  message = "You get free shipping";
+  applyFreeShipping(total >= 25);
 } else {
-     message = "Shipping cost is 3.99.";
+  message = "Shipping cost is 3.99.";
 }
 
-let price1 ;
 let tax = 5.2;
-let taxDue;
 
 taxDue = price1 * (tax / 100);
 
-alert(taxDue);
+window.alert("Your total is" + taxDue);
 
 
+let salesReceiptElement = document.getElementById("sales-receipt");
 
+let salesTaxElement = document.createElement("p");
+salesTaxElement.textContent = tax;
+salesReceiptElement.appendChild(salesTaxElement);
 
+document.getElementById("subtotal").textContent = price
+document.getElementById("tax").textContent = taxDue
+document.getElementById("total").textContent = total
