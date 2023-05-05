@@ -33,3 +33,15 @@ if ( total >= 25){
 } else {
      message = "Shipping cost is 3.99.";
 }
+
+let price1 ;
+let tax = 5.2;
+let taxDue;
+
+taxDue = price1 * (tax / 100);
+
+alert(taxDue);
+
+
+
+
