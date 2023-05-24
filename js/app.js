@@ -60,3 +60,8 @@ for (let i = 0; i < seattleSales.length; i++){
   console.log(hours[0], stores[0]);
 }
 
+let sumSea = 0
+sumSea += CSaSea[0]
+sumSea += CSaSea[1]
+sumSea += CSaSea[2]
+sumSea += CSaSea[3]
