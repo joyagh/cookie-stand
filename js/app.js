@@ -45,7 +45,7 @@ function renderTableFoot() {
   let grandTotal = document.createElement(`td`);
   grandTotal.textContent = hour;
   totalRow.appendChild(grandTotal);
-};
+}
 
 // array of objects
 let stores = [

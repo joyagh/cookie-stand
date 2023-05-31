@@ -10,3 +10,5 @@ In this lab I will make a cookie sales page.
 ### Links & Resources
 
 ### Lighthouse Scores
+
+![Lighthouse Score](./img/lighthouse.png)
