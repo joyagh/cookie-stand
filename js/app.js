@@ -15,7 +15,7 @@ City.prototype.render = function render() {
   nameData.textContent = this.store;
   sales.appendChild(locRow);
   locRow.appendChild(nameData);
-  console.log(this.salesPerHour);
+  //(this.salesPerHour);
   for (let i = 0; i < this.salesPerHour.length; i++) {
     let salesData = document.createElement(`td`);
     salesData.textContent = this.salesPerHour[i];
@@ -122,7 +122,7 @@ for (let i = 0; i < stores.length; i++) {
     stores[i].salesPerHour.push(randomNum);
     stores[i].subTotal += randomNum;
   }
-  console.log(stores[i].subTotal);
+  // console.log(stores[i].subTotal);
 }
 
 let salesData = document.getElementById("sales-data");
@@ -157,6 +157,25 @@ for (let i = 0; i < stores.length; i++) {
   stores[i].render();
 }
 renderTableFoot();
+
+let form = document.getElementById("store-form");
+
+function formSubmit(event) {
+  event.preventDefault();
+  let store = event.target.store.value;
+  let minCust = event.target.minCust.value;
+  let maxCust = event.target.maxCust.value;
+  let avgCookiesPerSale = event.target.avgCookiesPerSale.value;
+
+  let newCity = new City(store, minCust, maxCust, avgCookiesPerSale, []);
+  newCity.render();
+  stores.push(newCity);
+  console.log(stores);
+renderTableFoot();
+}
+
+form.addEventListener("submit", formSubmit);
+console.log(stores);
 
 // stores[i];
 // stores.salesPerHour[i];
